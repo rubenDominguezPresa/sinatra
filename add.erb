@@ -1,0 +1,26 @@
+<!-- views/add.erb -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add | Online Calculator</title>
+</head>
+<body>
+  <h1>Add</h1>
+
+  <form action="/calculate_add" method="POST">
+  	<input type="number" name="first_number" placeholder="1st number"> +
+  	<input type="number" name="second_number" placeholder="2nd number">
+
+  	<button type="submit">Calculate</button>
+  </form>
+
+  <label for="name">Your name:</label>
+  <input type="text" id="name" placeholder="Han Solo">
+
+  <label for="email">Your email:</label>
+  <input type="email" id="email" placeholder="han@smugglers.sexy">
+
+  <input type="checkbox" id="terms">
+  <label for="terms">You agree to our not evil terms of service</label>
+</body>
+</html>
