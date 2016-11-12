@@ -1,7 +1,9 @@
 # server.rb
 require "sinatra"
+require "sinatra/reloader"
 require_relative "./lib/calculator"
 
+enable (:session)
 get '/' do
   erb(:calculator)
 end

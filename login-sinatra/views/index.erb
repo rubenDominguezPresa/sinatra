@@ -1,0 +1,26 @@
+<!-- views/index.erb -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login/register Web</title>
+</head>
+<body>
+  <h1>Login</h1>
+  <h2><%= @message %></h2>
+  <form action="/log_in" method="POST">
+  	<input type="username" name="username" >
+  	<p/>
+  	<input type="password" name="password" >
+  	<button type="submit">login</button>
+  </form>
+  <p/>
+  <h1>Register</h1>
+  <form action="/register" method="POST">
+  	<input type="username" name="username" >
+  	<p/>
+  	<input type="password" name="password" >
+  	<button type="submit">register</button>
+  </form>
+
+</body>
+</html>
